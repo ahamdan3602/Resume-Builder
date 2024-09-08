@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "./assets/styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    </head>
+    <!-- About section includes firstname middlename (optional), lastname, picture, addres, email, phone no -->
+    <!-- Achievements -->
+    <!-- Work Experience -->
+    <!-- Education-->
+    
+
+    <body>
+        <nav class = "nav-bar resume-nav">
+            <h1 class = "site-title"><img class = "logo" src = "./images/curriculum-vitae.svg" height = "50" width = "80"/><span style = "color:rgba(33, 62, 254, 0.623);">Quick</span>Build Resume</h1>
+            <div class = "options">
+                <ul>
+                    <li>Home</li>
+                    <li>Create</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </nav>
+        <br/>
+            <div class = "container resume-info">
+                <form action ="" class = "cv-form" id = "cv-form">
+                    <div class = "cv-form-blk">
+                        <div class = "form-section">
+                            <h3>About Section</h3>
+                        </div>
+                        <div class = "cv-form-row">
+                            <div class = "cols-3">
+                                <div clas = "form-elem">
+                                    <label for="" class = "form-label">First Name </label>
+                                    <input type = "text" class = "form-input" id = "fname" name = "fname" placeholder="e.g. John" required>
+                                </div>
+                                <div class = "form-elem">
+                                    <label for = "" class = "form-label">Middle Name (Optional)</label>
+                                    <input type = "text" class = "form-input" id ="mname" name = "mname">
+                                </div>
+                                <div class = "form-elem">
+                                    <lable for = "" class = "form-label">Last Name </lable>
+                                    <input type = "text" class = "form-input" id ="lname" name = "lname" placeholder = "e.g. Doe" required>
+                                </div>
+                            </div>
+                            <div class = "cols-3">
+                                <div class = "form-elem">
+                                    <label for = "" class = "form-label">Your Image </label>
+                                    <input type = "file" class = "form-input" id = "img" name="img" required>
+                                </div>
+                                <div class = "form-elem">
+                                    <label for = "" class = "form-label">Address </label>
+                                    <input type = "text" class = "form-input" id = "addr" name = "addr" placeholder = "e.g. 123 River St"required>
+                                </div>
+                                <div class = "form-elem">
+                                    <label for = "" class = "form-label">Email</label>
+                                    <input type = "email" class = "form-input" id = "email" name = "email" placeholder = "e.g. johndoe@gmail.com" required>
+                                </div>
+                                
+                                <div class = "form-elem">
+                                    <label for = "" class = "form-label">Phone Number</label>
+                                    <input type = "email" class = "form-input" id = "pnumber" name = "pnumber" placeholder = "e.g. 456-678-798" required>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                <div class = "cv-form-blk">
+                    <div class = "form-section">
+                        <h3>Achievements</h3>
+                    </div>
+                    <div class = "row-separator repeater">
+                        <div class = "repeater" data-repeater-list = "group-b">
+                            <div data-repeater-item>
+                                <div class = "cv-form-row cv-form-row-achievments">
+                                    <div class = "cols-2">
+                                        <div clas = "form-elem">
+                                            <label for="" class = "form-label">Title</label>
+                                            <input type = "text" class = "form-input achieve_title"  id = "ach_title"name = "achieve_title"  required>
+                                        </div>
+                                        <div clas = "form-elem">
+                                            <label for="" class = "form-label">Description </label>
+                                            <input type = "text" class = "form-input achieve_desc" id = "ach_desc"  name = "achieve_desc" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button data-repeater-delete type = "button" class = "repeater-remove-btn">Delete</button>
+                            </div>
+                        </div>
+                        <button type = "button" data-repeater-create value = "Add" class = "repeater-add-btn">Add</button>
+
+                    </div>
+
+                </div>
+
+                <div class = "cv-form-blk">
+                    <div class = "form-section">
+                        <h3>Work Experience</h3>
+                    </div>
+                    <div class = "row-seperator repeater">
+                        <div class = "repeater" data-repeater-list = "group-c">
+                            <div data-repeater-item>
+                                <div class = "cv-form-row cv-form-row-work-experience">
+                                    <div class = "cols-5">
+                                        <div class = "form-elem">
+                                            <label for ="" class = "form-label">Work Title</label>
+                                            <input name = "work_title" type = "text" id = "work_title" class = "form-input work_title">
+                                        </div>
+                                        <div class = "form-elem">
+                                            <label for ="" class = "form-label">Location</label>
+                                            <input name = "work_location" type = "text" id = "work_loc"class = "form-input work_location">
+                                        </div>
+                                        <div class = "form-elem">
+                                            <label for ="" class = "form-label">Start</label>
+                                            <input name = "work_start" type = "date" id = "work_start" class = "form-input work_start">
+                                        </div>
+                                        <div class = "form-elem">
+                                            <label for ="" class = "form-label">End</label>
+                                            <input name = "work_end" type = "date"id = "work_end" class = "form-input work_end">
+                                        </div>
+                                        <div class = "form-elem">
+                                            <label for ="" class="form-label">Description</label>
+                                            <input name = "work_description" type = "text" id = "work_desc"class = "form-input work_description">
+                                        </div>
+                                    </div>
+                                </div>
+                            <button data-repeater-delete type = "button" class = "repeater-remove-btn">Delete</button>
+
+                            </div>
+                        </div>
+                        <button type = "button" data-repeater-create value = "Add" class = "repeater-add-btn">Add</button>
+                    </div>
+                </div>
+
+                <div class = "cv-form-blk">
+                    <div class = "form-section">
+                        <h3>Education</h3>
+                    </div>
+                    <div class = "row-seperator repeater">
+                        <div class = "repeater" data-repeater-list = "group-d">
+                            <div data-repeater-item>
+                                <div class = "cv-form-row cv-form-row-education">
+                                    <div class = "cols-5">
+
+                                        <div class = "form-elem">
+                                            <label for ="" class = "form-label">School</label>
+                                            <input name = "school" type = "text" id ="school"class = "form-input school">
+                                        </div>
+                                        <div class = "form-elem">
+                                            <label for ="" class = "form-label">Degree</label>
+                                            <input name = "school_degree" id = "edu_deg" type = "text" class = "form-input school_degree">
+                                        </div>
+                                        <div class = "form-elem">
+                                            <label for ="" class = "form-label">Start</label>
+                                            <input name = "school_start" type = "date" id = "edu_start" class = "form-input school_start">
+                                        </div>
+                                        <div class = "form-elem">
+                                            <label for ="" class = "form-label">End</label>
+                                            <input name = "school_end" type = "date"id="edu_end" class = "form-input school_end">
+                                        </div>
+                                        <div class = "form-elem">
+                                            <label for ="" class="form-label">Location</label>
+                                            <input name = "school_location" type = "text" id = "edu_loc" class = "form-input school_location">
+                                        </div>
+                                    </div>
+                                </div>
+                            <button data-repeater-delete type = "button" class = "repeater-remove-btn">Delete</button>
+
+                            </div>
+                        </div>
+                        <button type = "button" data-repeater-create value = "Add" class = "repeater-add-btn">Add</button>
+                    </div>
+                </div>
+
+                <div class = "cv-form-blk">
+                    <div class = "form-section">
+                        <h3>Projects</h3>
+                    </div>
+                    <div class = "row-seperator repeater">
+                        <div class = "repeater" data-repeater-list = "group-e">
+                            <div data-repeater-item>
+                                <div class = "cv-form-row cv-form-row-projects">
+                                    <div class = "cols-3">
+                                        <div class = "form-elem">
+                                            <label for ="" class = "form-label">Project Name</label>
+                                            <input name = "proj_name" type = "text" id = "pro_name" class = "form-input proj_name">
+                                        </div>
+                                        <div class = "form-elem">
+                                            <label for ="" class = "form-label">Project Link</label>
+                                            <input name = "proj_link" type = "text" id= "pro_link" class = "form-input proj_link">
+                                        </div>
+                                        <div class = "form-elem">
+                                            <label for ="" class="form-label">Description</label>
+                                            <input name = "proj_desc" type = "text" id = "pro_desc"class = "form-input proj_desc">
+                                        </div>
+                                    </div>
+                                </div>
+                            <button data-repeater-delete type = "button" class = "repeater-remove-btn">Delete</button>
+
+                            </div>
+                        </div>
+                        <button type = "button" data-repeater-create value = "Add" class = "repeater-add-btn">Add</button>
+                    </div>
+                </div>
+
+                <div class = "cv-form-blk">
+                    <div class = "form-section">
+                        <h3>Skills</h3>
+                    </div>
+                    <div class = "row-seperator repeater">
+                        <div class = "repeater" data-repeater-list = "group-f">
+                            <div data-repeater-item>
+                                <div class = "cv-form-row cv-form-row-skills">
+                                    <div class = "cols-1">
+                                        <div class = "form-elem">
+                                            <label for ="" class = "form-label">Skill</label>
+                                            <input name = "skill_name" type = "text" class = "form-input">
+                                        </div>
+                                    </div>
+                                </div>
+                            <button data-repeater-delete type = "button" class = "repeater-remove-btn">Delete</button>
+
+                            </div>
+                        </div>
+                        <button type = "button" data-repeater-create value = "Add" class = "repeater-add-btn">Add</button>
+                    </div>
+                </div>
+            </form>
+
+            <div class= "print-btn-sc">
+                <div class="container">
+                    <button type = "button" class = "print-btn button btn-primary" id = "printcv">PrintCV</button>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.repeater/1.2.1/jquery.repeater.js" integrity="sha512-bZAXvpVfp1+9AUHQzekEZaXclsgSlAeEnMJ6LfFAvjqYUVZfcuVXeQoN5LhD7Uw0Jy4NCY9q3kbdEXbwhZUmUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
+        <script src = "./assets/script.js"></script>
+        <script src = "./assets/app.js"></script>
+    </body>
+</html>
